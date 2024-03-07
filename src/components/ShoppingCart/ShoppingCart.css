@@ -1,0 +1,251 @@
+.cart__title {
+  margin: 0;
+}
+
+.cart__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.cart__title {
+  max-width: 476px;
+  width: 100%;
+}
+
+.cart__btn {
+  border: 1px solid var(--grey-divider);
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 126%;
+  text-align: center;
+  color: var(--grey);
+  cursor: pointer;
+  background-color: transparent;
+  max-width: 173px;
+  width: 100%;
+}
+
+.cart__btn:hover {
+  background: var(--light-grey);
+}
+
+.cart__btn:active {
+  color: var(--black);
+}
+
+.cart__wrapper {
+  display: flex;
+  gap: 32px;
+}
+
+.cart__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 780px;
+}
+.cart-item {
+  position: relative;
+  display: flex;
+  border: 1px solid var(--grey-divider);
+  border-radius: 12px;
+  width: 100%;
+  min-height: 180px;
+}
+
+.cart-item__title {
+  max-width: 250px;
+  margin: 0;
+}
+
+.cart-item__img {
+  margin-right: 32px;
+}
+
+.cart-item__info {
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.cart-item__bottom {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.cart-item__prices {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.cart-item__currentprice {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 110%;
+  color: var(--black);
+}
+
+.cart-item__oldprice {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  text-decoration: line-through;
+  color: var(--grey);
+}
+
+.cart-item__delete-btn {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  background-color: transparent;
+  border: none;
+  width: 32px;
+  height: 32px;
+  background-image: url('/src/images/cart-item-delete-btn.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.cart-details {
+  align-self: flex-start;
+  width: 100%;
+  padding: 32px;
+  border-radius: 12px;
+  background: var(--light-grey);
+  max-width: 548px;
+}
+
+.cart-details__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 110%;
+  color: var(--black);
+}
+
+.cart-details__items {
+  display: block;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 130%;
+  color: var(--grey);
+}
+
+.cart-details__total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.cart-details__total-head {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 130%;
+  color: var(--grey);
+}
+
+
+.cart-details__total-sum {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 110%;
+  color: var(--black);
+}
+
+.cart-order {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-order__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cart-order__input {
+  border: 1px solid var(--grey-divider);
+  border-radius: 6px;
+  padding: 16px 32px;
+  width: 484px;
+  height: 58px;
+  font-size: 22px;
+}
+
+.cart-order__input::placeholder {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  color: var(--grey);
+}
+
+.cart-order__btn {
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 16px 32px;
+  width: 100%;
+  min-height: 58px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--green);
+  cursor: pointer;
+  border: none;
+  margin-top: 32px;
+}
+
+.cart-order__btn.cart-order__btn--placed {
+  background-color: var(--white);
+  color: var(--black);
+  border: 1px solid var(--black);
+}
+
+.cart-wrapper__line {
+  width: 90%;
+}
+
+.cart__wrapper-no-items {
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  color: var(--black);
+  margin-bottom: 32px;
+}
+
+.cart__wrapper-continue {
+  display: block;
+  border-radius: 6px;
+  padding: 16px 56px;
+  min-height: 58px;
+  background: var(--green);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: center;
+  color: var(--white);
+  max-width: 313px;
+  width: 100%;
+}
+
+.product-about__oldprice.cart-about__oldprice {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  text-decoration: line-through;
+  color: var(--grey);
+}

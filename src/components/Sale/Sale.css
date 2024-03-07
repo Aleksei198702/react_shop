@@ -1,0 +1,133 @@
+.sale {
+    
+}
+
+.sale__title {
+    margin: 0;
+
+}
+
+.sale__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.sale__btn {
+    border: 1px solid var(--grey-divider);
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 126%;
+    text-align: center;
+    color: var(--grey);
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.sale__btn:hover {
+    background: var(--light-grey);
+}
+
+.sale__btn:active {
+    color: var(--black);
+}
+
+
+.sale__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+}
+
+.sale-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 3 span;
+    border: 1px solid var(--grey-divider);
+    border-radius: 12px;
+    padding-bottom: 34px;
+    min-height: 422px;
+}
+
+.sale-item__imgbox {
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid var(--grey-divider);
+    margin-bottom: 20px;
+}
+
+.sale-item__img {
+    width: 100%;
+}
+
+.sale-item__sale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    border-radius: 6px;
+    padding: 4px 8px;
+    width: 68px;
+    height: 34px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: var(--white);
+    background: var(--green);
+}
+
+.sale-item__title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    color: var(--black);
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.sale-item__prices {
+    display: flex;
+    align-items: flex-end;
+    gap: 16px;
+}
+
+.sale-item__currentprice {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 110%;
+    color: var(--black);
+}
+
+.sale-item__oldprice {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    text-decoration: line-through;
+    color: var(--grey);
+}
+
+.item-link {
+    position: absolute;
+    inset: 0;
+}
+
+.sale-wrapper__line {
+    width: 92.5%;
+}
+
+.sale__title-discounted {
+    margin-bottom: 40px;
+}
